@@ -52,11 +52,11 @@ function Contact() {
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="First Name"
             />
-            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please fill out this field.</p>
+            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please input your first name</p>
             </label>
             </div>
             <div className='w-6/12'>
-                <label htmlFor="" className='block text-left my-2'><span className='block text-left my-2'>First name</span>
+                <label htmlFor="" className='block text-left my-2'><span className='block text-left my-2'>Last name</span>
           <input type="text" className="form-control block
             w-full
             m-0
@@ -73,9 +73,9 @@ function Contact() {
             m-0
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
-            placeholder="First Name"
+            placeholder="Last Name"
             />
-            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please fill out this field.</p>
+            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please fill in your last Name</p>
             </label>
             </div>
         </div>
@@ -98,9 +98,9 @@ function Contact() {
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50
             peer ...
             " id="exampleInput8"
-            placeholder="Email address"
+            placeholder="youremail@example.com"
              />
-            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">Please fill out this field.</p>
+            <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">Please fill in your e-mail address</p>
             </label>
         </div>
         <div className="form-group mb-6">
@@ -123,8 +123,8 @@ function Contact() {
             resize-none
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 message
             
-          " id="exampleFormControlTextarea13" rows="3" placeholder="Message" ></textarea>
-          <p className="text-red-500 text-xs italic mt-2">Please fill out this field.</p>
+          " id="exampleFormControlTextarea13" rows="3" placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
+          <p className="text-red-500 text-xs italic mt-2">Please enter a message</p>
           </label>
         </div>
         
