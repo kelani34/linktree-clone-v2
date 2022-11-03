@@ -168,8 +168,8 @@ function Contact() {
           duration-150
           ease-in-out"
           id="btn__submit"
-          >Send</button>
-          <input type="hidden" name="_next" value='https://kelani-linktr-ee-v2.netlify.app/thanks'></input>
+          onClick={validateForm}>Send</button>
+          <input type="hidden" name="_next" value='https://kelani-linktree.netlify.app/thanks'></input>
           <input type="hidden" name="_captcha" value="false"></input>
       </form>
 </div>
