@@ -34,7 +34,7 @@ function Contact() {
                 <h1 className='text-3xl font-medium'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
-      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST" >
+      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" onSubmit={validateForm} method="POST" >
         <div className="form-group mb-6 flex space-x-6">
             <div className='w-6/12'>
                 <label htmlFor="first_name" className='block text-left my-2'>First name</label>
