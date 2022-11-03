@@ -62,7 +62,7 @@ function Contact() {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 focus:outline-none" id="exampleInput8"
+            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 " id="exampleInput8"
             placeholder="Email address"
             required="required"
             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
