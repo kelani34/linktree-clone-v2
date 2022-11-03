@@ -84,7 +84,7 @@ function Contact() {
             ease-in-out
             m-0
             resize-none
-            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 focus:ring-4 focus:ing-opacity-75 focus:outline-none
+            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 focus:ring-4 ring-opacity-20 focus:outline-none
           " id="exampleFormControlTextarea13" rows="3" placeholder="Message" required="required"></textarea>
         </div>
         <div className="form-group form-check text-center mb-6">
