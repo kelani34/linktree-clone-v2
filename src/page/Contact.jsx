@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Contact.css'
 function Contact() {
   return (
     <>
@@ -84,7 +84,7 @@ function Contact() {
             ease-in-out
             m-0
             resize-none
-            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 focus:outline-1 focus:outline-blue-400
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 focus:outline-blue-400 message
           " id="exampleFormControlTextarea13" rows="3" placeholder="Message" required="required"></textarea>
         </div>
         <div className="form-group form-check text-center mb-6">

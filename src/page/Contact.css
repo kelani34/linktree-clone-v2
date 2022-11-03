@@ -1,0 +1,5 @@
+
+textarea:focus{
+    outline: solid;
+    outline-width: 0.5px;
+  }
