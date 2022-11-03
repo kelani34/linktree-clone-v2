@@ -9,3 +9,15 @@ textarea:focus{
     outline-color: #84CAFF;
     outline-width: 0.7px;
   }
+
+
+  textarea:required{
+    outline: solid;
+    outline-color: #84CAFF;
+    outline-width: 0.7px;
+  }
+  input:required{
+    outline: solid;
+    outline-color: red;
+    outline-width: 0.7px;
+  }

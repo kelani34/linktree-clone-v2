@@ -6,11 +6,8 @@ function Contact() {
         <div className='w-full h-screen flex'>
             <div className='w-6/12 m-auto'>
                 <h1 className='text-3xl font-medium'>Contact me</h1>
-                <p className='text-slate-400 mt-6'>Hi there Ask me about anything you have in mind</p>
-<div className="container my-24 px-6 mx-auto">
+                <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
-  <section className="mb-32 text-center text-gray-800">
-    <div className="max-w-[700px] mx-auto px-3 lg:px-6">
       <form>
         <div className="form-group mb-6 flex space-x-6">
             <div className='w-6/12'>
@@ -123,10 +120,7 @@ function Contact() {
           duration-150
           ease-in-out">Send</button>
       </form>
-    </div>
-  </section>
 </div>
-            </div>
         </div>
     </>
   )
