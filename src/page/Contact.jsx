@@ -27,7 +27,7 @@ function Contact() {
             ease-in-out
             m-0
             inline mr-5
-            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 focus:outline-none" id="exampleInput7"
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="First Name"
             required="required" />
           <input type="text" className="form-control block
@@ -44,7 +44,7 @@ function Contact() {
             ease-in-out
             m-0
             inline
-            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 focus:outline-none" id="exampleInput7"
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="First Name"
             required="required" />
         </div>
@@ -62,7 +62,7 @@ function Contact() {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:bg-white focus:ring-blue-500/50 " id="exampleInput8"
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput8"
             placeholder="Email address"
             required="required"
             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />

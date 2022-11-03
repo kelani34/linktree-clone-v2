@@ -4,3 +4,8 @@ textarea:focus{
     outline-color: #84CAFF;
     outline-width: 0.7px;
   }
+  input:focus{
+    outline: solid;
+    outline-color: #84CAFF;
+    outline-width: 0.7px;
+  }
