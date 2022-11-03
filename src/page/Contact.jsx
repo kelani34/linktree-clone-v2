@@ -94,7 +94,7 @@ function Contact() {
             text-gray-700
             bg-white bg-clip-padding
             border border-solid border-gray-300
-            rounded
+            rounded-lg
             transition
             ease-in-out
             m-0
@@ -119,7 +119,7 @@ function Contact() {
             text-gray-700
             bg-white bg-clip-padding
             border border-solid border-gray-300
-            rounded
+            rounded-lg
             transition
             ease-in-out
             m-0
