@@ -169,7 +169,7 @@ function Contact() {
           ease-in-out"
           id="btn__submit"
           onClick={validateForm}>Send</button>
-          <input type="hidden" name="_next" value='http://localhost:5173/thanks'></input>
+          <input type="hidden" name="_next" value='http://kelani-linktr-ee-v2/thanks'></input>
           <input type="hidden" name="_captcha" value="false"></input>
       </form>
 </div>
