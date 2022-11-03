@@ -5,8 +5,11 @@ function Contact() {
     function validateForm() {
         let x = document.forms["myForm"]["fname"].value;
         const reqs = document.getElementsByClassName('form-control')
+        const rtext = document.getElementsByClassName('requires')
         if (x == "") {
-          document.querySelector('.requires').classList.remove('hidden')
+          for (const text of rtext){
+            text.classList.remove('hidden')
+          }
           
           for (const req of reqs){
           req.classList.add('border', 'border-solid', 'border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50')
@@ -44,7 +47,7 @@ function Contact() {
             text-gray-700
             bg-white bg-clip-padding
             border border-solid border-gray-300
-            rounded
+            rounded-lg
             transition
             ease-in-out
             m-0
@@ -67,7 +70,7 @@ function Contact() {
             text-gray-700
             bg-white bg-clip-padding
             border border-solid border-gray-300
-            rounded
+            rounded-lg
             transition
             ease-in-out
             m-0
@@ -75,12 +78,12 @@ function Contact() {
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="Last Name"
             />
-            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please fill in your last Name</p>
+            <p className="text-red-500 text-xs italic mt-2 hidden requires">Please input your last name</p>
             </label>
             </div>
         </div>
         <div className="form-group mb-6">
-        <label htmlFor="" className='block text-left my-2'> <span className='block text-left my-2'>First name</span>
+        <label htmlFor="" className='block text-left my-2'> <span className='block text-left my-2'>Email</span>
           <input type="email" className="block
           form-control
             w-full
@@ -104,7 +107,7 @@ function Contact() {
             </label>
         </div>
         <div className="form-group mb-6">
-        <label htmlFor="" className='block text-left my-2'><span className='block text-left my-2'>First name</span>
+        <label htmlFor="" className='block text-left my-2'><span className='block text-left my-2'>Message</span>
           <textarea className="
             form-control
             block
@@ -124,7 +127,7 @@ function Contact() {
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 message
             
           " id="exampleFormControlTextarea13" rows="3" placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
-          <p className="text-red-500 text-xs italic mt-2">Please enter a message</p>
+          <p className="text-red-500 text-xs italic mt-2 hidden requires">Please enter a message</p>
           </label>
         </div>
         
