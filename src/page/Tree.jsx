@@ -73,6 +73,7 @@ function Tree() {
           </div>
           { link.map((link) => {
             return (
+              <>
               <Links 
               adding the target="_blank"
               id={link.id}
@@ -80,9 +81,14 @@ function Tree() {
               link={link.link}
               display={link.display}
               />
+              </>
+              
             )
           }) 
         }
+        <div className='  items-center m-4'>
+                <Link to='/contact' id='contact'> <div className=' rounded-lg p-4 text-center links'> Contact Me</div></Link>
+            </div>
         <div className='flex mt-4 justify-center space-x-6'>
           <a href='https://github.com/kelani34'><img src={slackIcon} /></a>
           <a href='https://hng9.slack.com/'><img src={githubIcon} /></a>
