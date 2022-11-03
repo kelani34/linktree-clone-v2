@@ -25,6 +25,7 @@ function Contact() {
           for (const req of reqs){
           req.classList.remove('border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50')
           }
+          return true;
         }
       }
   return (
@@ -169,7 +170,7 @@ function Contact() {
           ease-in-out"
           id="btn__submit"
           onClick={validateForm}>Send</button>
-          <input type="hidden" name="_next" value='https://kelani-linktree.netlify.app/thanks'></input>
+          <input type="hidden" name="_next" value='https://kelani-linktr-ee-v2.netlify.app/thanks'></input>
           <input type="hidden" name="_captcha" value="false"></input>
       </form>
 </div>
