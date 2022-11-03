@@ -12,9 +12,12 @@ function Contact() {
   <section className="mb-32 text-center text-gray-800">
     <div className="max-w-[700px] mx-auto px-3 lg:px-6">
       <form>
-        <div className="form-group mb-6 flex ">
+        <div className="form-group mb-6 flex space-x-6">
+            <div className='w-6/12'>
+                <label htmlFor="" className='block text-left my-2'>First name</label>
           <input type="text" className="form-control block
-            w-6/12
+            w-full
+            m-0
             px-3
             py-1.5
             text-base
@@ -30,8 +33,12 @@ function Contact() {
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="First Name"
             required="required" />
+            </div>
+            <div className='w-6/12'>
+                <label htmlFor="" className='block text-left my-2'>First name</label>
           <input type="text" className="form-control block
-            w-6/12
+            w-full
+            m-0
             px-3
             py-1.5
             text-base
@@ -43,12 +50,14 @@ function Contact() {
             transition
             ease-in-out
             m-0
-            inline
+            inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" id="exampleInput7"
             placeholder="First Name"
             required="required" />
+            </div>
         </div>
         <div className="form-group mb-6">
+        <label htmlFor="" className='block text-left my-2'>First name</label>
           <input type="email" className="form-control block
             w-full
             px-3
@@ -68,6 +77,7 @@ function Contact() {
             pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
         </div>
         <div className="form-group mb-6">
+        <label htmlFor="" className='block text-left my-2'>First name</label>
           <textarea className="
             form-control
             block
