@@ -40,13 +40,13 @@ function Contact() {
       }
   return (
     <>
-        <div className='md:flex lg:flex w-full cont-box h-screen m-16'>
+        <div className='md:flex lg:flex  cont-box h-screen m-16'>
             <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto'>
               <div>
                 <h1 className='text-3xl font-medium mb-5'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-12'>Hi there Ask me about anything you have in mind.</p>
-              </div>
-
+            </div>
+      <div>
       <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST">
         <div className="form-group flex flex-wrap name-group">
             <div className=' name-box'>
@@ -194,6 +194,7 @@ function Contact() {
           <input type="hidden" name="_next" value='https://kelani-linktr-ee-v2.netlify.app/thanks'></input>
           <input type="hidden" name="_captcha" value="false"></input>
       </form>
+      </div>
 </div>
         </div>
         <Footer />
