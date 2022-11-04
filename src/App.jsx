@@ -1,15 +1,15 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Tree from './page/Tree'
-import Contact from './page/Contact'
-import Thanks from './page/Thanks'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Thanks from './pages/Thanks'
 
 function App() {
   return (
       <>
       <Router>
         <Routes>
-          <Route path='/' element={<Tree />}/>
+          <Route path='/' element={<Home />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/thanks' element={<Thanks />}/>
         </Routes>

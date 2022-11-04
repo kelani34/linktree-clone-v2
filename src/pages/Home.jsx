@@ -10,7 +10,7 @@ import Links from '../components/Links'
 import { FacebookIcon, TwitterIcon, WhatsappIcon,} from "react-share";
 import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from "react-share";
 
-function Tree() {
+function Home() {
   const [link,  setLink] = useState([
     {
       id: 'twitter',
@@ -99,4 +99,4 @@ function Tree() {
   )
 }
 
-export default Tree
+export default Home
