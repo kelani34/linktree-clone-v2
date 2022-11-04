@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import './Contact.css'
 function Contact() {
 
+  const name = 'Taiwo Shina-Kelani'
     function validateForm() {
         let x = document.forms["myForm"]["firstName"].value;
         
