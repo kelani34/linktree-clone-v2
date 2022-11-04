@@ -40,12 +40,12 @@ function Contact() {
       }
   return (
     <>
-        <div className='w-11/12 h-screen md:flex lg:flex'>
+        <div className='h-screen md:flex lg:flex w-full'>
             <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto m-2 w-full'>
                 <h1 className='text-3xl font-medium'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
-      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST" >
+      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST">
         <div className="form-group mb-6 flex flex-wrap name-group">
             <div className=' name-box'>
                 <label htmlFor="first_name" className='block text-left my-2'>First name</label>
@@ -108,7 +108,8 @@ function Contact() {
           type="email" 
           className="block 
           form-control
-          w-11/12
+          w-full
+          shrink
             px-3
             py-1.5
             text-base
@@ -136,7 +137,7 @@ function Contact() {
           className="
             form-control
             block
-            w-11/12
+            w-full
             px-3
             py-1.5
             text-base
@@ -169,7 +170,7 @@ function Contact() {
         id="btn__submit"
         type="submit" 
         className="
-        w-11/12
+          w-full
           px-6
           py-2.5
           bg-blue-600
