@@ -63,7 +63,7 @@ body{
   .footer{
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     align-content: space-between;
     height: 200px;
@@ -84,6 +84,7 @@ hr{
   margin-left: 80px !important;
   margin-right: 80px !important;
   margin-top: 40px !important;
+  margin-top: 100px !important;
 }
 
 .footer{
