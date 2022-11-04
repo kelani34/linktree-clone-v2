@@ -1,4 +1,6 @@
 import React from 'react'
+import Button from '@mui/material/Button'
+import { Link } from 'react-router-dom'
 
 function Thanks() {
   return (
@@ -9,7 +11,9 @@ function Thanks() {
         <h1 className='text-2xl font-bold p-6'>Thank you!</h1>
         <p>Your response has been sent to <u className='text-blue-500 hover:text-blue-200 cursor:pointer'>kelanitaiwo34@gmail.com</u></p>
         </div>
+        <Link to='/'> Go back</Link>
         </div>
+
         </div>
     </>
   )
