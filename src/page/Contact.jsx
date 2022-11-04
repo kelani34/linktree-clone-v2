@@ -40,15 +40,17 @@ function Contact() {
       }
   return (
     <>
-        <div className=' mb-20 md:flex lg:flex w-full cont-box'>
-            <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto m-2'>
-                <h1 className='text-3xl font-medium'>Contact me</h1>
-                <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
+        <div className='md:flex lg:flex w-full cont-box h-screen m-16'>
+            <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto'>
+              <div>
+                <h1 className='text-3xl font-medium mb-5'>Contact me</h1>
+                <p className='text-slate-400 mt-4 mb-12'>Hi there Ask me about anything you have in mind.</p>
+              </div>
 
       <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST">
-        <div className="form-group mb-3 flex flex-wrap name-group">
+        <div className="form-group flex flex-wrap name-group">
             <div className=' name-box'>
-                <label htmlFor="first_name" className='block text-left my-2'>First name</label>
+                <label htmlFor="first_name" className='block text-left mb-1.5'>First name</label>
           <input 
           id="first_name"
           name='firstName' 
@@ -66,7 +68,7 @@ function Contact() {
             rounded-lg
             transition
             ease-in-out
-            m-0
+            mb-6
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             placeholder="First Name"
@@ -74,7 +76,7 @@ function Contact() {
             <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please input your first name</p>
             </div>
             <div className='name-box'>
-                <label htmlFor="last_name" className='block text-left my-2'>Last name</label>
+                <label htmlFor="last_name" className='block text-left mb-1.5'>Last name</label>
           <input 
           id="last_name"
           type="text" 
@@ -92,7 +94,7 @@ function Contact() {
             rounded-lg
             transition
             ease-in-out
-            m-0
+            mb-6
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             placeholder="Last Name"
@@ -101,7 +103,7 @@ function Contact() {
             </div>
         </div>
         <div className="form-group">
-        <label htmlFor="email" className='block text-left my-2'> Email</label>
+        <label htmlFor="email" className='block text-left mb-1.5'> Email</label>
           <input 
           id="email"
           name='email'
@@ -129,8 +131,8 @@ function Contact() {
             <p className=" invisible peer-invalid:visible text-red-600 text-xs font-medium">Please enter a valid Email address</p>
             <p className="text-red-500 text-xs font-medium hidden requires">Please input your last name</p>
         </div>
-        <div className="form-group mb-3">
-        <label htmlFor="message" className='block text-left my-2'>Message</label>
+        <div className="form-group mb-6">
+        <label htmlFor="message" className='block text-left mb-1.5'>Message</label>
           <textarea 
           id="message" 
           name="message"
@@ -156,7 +158,7 @@ function Contact() {
           <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please enter a message</p>
         </div>
         
-        <div className="form-group form-check mb-3 flex">
+        <div className="form-group form-check mb-6 flex">
           <div className='inline'>
           <input type="checkbox"
             className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white  checked:border-blue-600 focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
@@ -172,6 +174,7 @@ function Contact() {
         className="
           w-full
           px-6
+          mt-8
           py-2.5
           bg-blue-600
           text-white
