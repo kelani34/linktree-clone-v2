@@ -31,7 +31,7 @@ function Contact() {
           for (const req of reqs){
           req.classList.remove('border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50')
           }
-          document.getElementById('btn__submit').disabled = false;
+          document.getElementById('btn__submit').removeAttribute('disabled');
           return true;
         }
       }
