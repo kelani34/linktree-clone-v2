@@ -27,7 +27,7 @@
   .name-group{
     flex-direction: column;
   }
-  .form-box{
-    margin: 20px
+  .cont-box{
+    /* width: 90%; */
   }
 }

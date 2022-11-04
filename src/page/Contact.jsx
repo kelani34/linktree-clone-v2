@@ -40,8 +40,8 @@ function Contact() {
       }
   return (
     <>
-        <div className='h-screen md:flex lg:flex w-full'>
-            <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto m-2 w-full'>
+        <div className=' md:flex lg:flex w-full cont-box'>
+            <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto m-2'>
                 <h1 className='text-3xl font-medium'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
