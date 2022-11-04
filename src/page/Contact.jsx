@@ -40,13 +40,13 @@ function Contact() {
       }
   return (
     <>
-        <div className=' md:flex lg:flex w-full cont-box'>
+        <div className=' mb-20 md:flex lg:flex w-full cont-box'>
             <div className='lg:w-6/12 md:w-6/12 md:m-auto lg:m-auto m-2'>
                 <h1 className='text-3xl font-medium'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
       <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST">
-        <div className="form-group mb-6 flex flex-wrap name-group">
+        <div className="form-group mb-3 flex flex-wrap name-group">
             <div className=' name-box'>
                 <label htmlFor="first_name" className='block text-left my-2'>First name</label>
           <input 
@@ -129,7 +129,7 @@ function Contact() {
             <p className=" invisible peer-invalid:visible text-red-600 text-xs font-medium">Please enter a valid Email address</p>
             <p className="text-red-500 text-xs font-medium hidden requires">Please input your last name</p>
         </div>
-        <div className="form-group mb-6">
+        <div className="form-group mb-3">
         <label htmlFor="message" className='block text-left my-2'>Message</label>
           <textarea 
           id="message" 
@@ -156,7 +156,7 @@ function Contact() {
           <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please enter a message</p>
         </div>
         
-        <div className="form-group form-check mb-6 flex">
+        <div className="form-group form-check mb-3 flex">
           <div className='inline'>
           <input type="checkbox"
             className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white  checked:border-blue-600 focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
