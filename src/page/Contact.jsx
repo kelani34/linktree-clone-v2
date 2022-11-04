@@ -47,9 +47,10 @@ function Contact() {
 
       <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST" >
         <div className="form-group mb-6 flex flex-wrap space-x-6">
-            <div className='basis-3/6'>
+            <div className=''>
                 <label htmlFor="first_name" className='block text-left my-2'>First name</label>
           <input 
+          id="first_name"
           name='firstName' 
           type="text" 
           className="form-control block
@@ -68,14 +69,14 @@ function Contact() {
             m-0
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
-            id="first_name"
             placeholder="First Name"
             />
             <p className="text-red-500 text-xs italic mt-2 hidden requires">Please input your first name</p>
             </div>
-            <div className='basis-3/6'>
+            <div className=''>
                 <label htmlFor="last_name" className='block text-left my-2'>Last name</label>
           <input 
+          id="last_name"
           type="text" 
           name='lastName'
           className="form-control block
@@ -94,7 +95,6 @@ function Contact() {
             m-0
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
-            id="last_name"
             placeholder="Last Name"
             />
             <p className="text-red-500 text-xs italic mt-2 hidden requires">Please input your last name</p>
@@ -103,6 +103,7 @@ function Contact() {
         <div className="form-group mb-6">
         <label htmlFor="email" className='block text-left my-2'> Email</label>
           <input 
+          id="email"
           name='email'
           type="email" 
           className="block 
@@ -121,7 +122,6 @@ function Contact() {
             m-0
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input
             peer ..." 
-            id="email"
             placeholder="youremail@example.com"
             
              />
@@ -129,7 +129,10 @@ function Contact() {
         </div>
         <div className="form-group mb-6">
         <label htmlFor="message" className='block text-left my-2'>Message</label>
-          <textarea className="
+          <textarea 
+          id="message" 
+          name="message"
+          className="
             form-control
             block
             w-full
@@ -146,7 +149,6 @@ function Contact() {
             m-0
             resize-none
             focus:text-gray-700 focus:bg-white " 
-            id="message" 
             rows="3" 
             placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
           <p className="text-red-500 text-xs italic mt-2 hidden requires">Please enter a message</p>
@@ -160,7 +162,10 @@ function Contact() {
             />
           <label className="form-check-label inline-block text-gray-800" htmlFor="exampleCheck87">You agree to providing your data to Taiwo Shina-kelani who may contact you.</label>
         </div>
-        <button type="submit" className="
+        <button 
+        id="btn__submit"
+        type="submit" 
+        className="
           w-full
           px-6
           py-2.5
@@ -178,7 +183,6 @@ function Contact() {
           transition
           duration-150
           ease-in-out"
-          id="btn__submit"
           onClick={validateForm}>Send</button>
           <input type="hidden" name="_next" value='https://kelani-linktr-ee-v2.netlify.app/thanks'></input>
           <input type="hidden" name="_captcha" value="false"></input>
