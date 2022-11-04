@@ -6,25 +6,32 @@ function Contact() {
 
     function validateForm() {
         let x = document.forms["myForm"]["firstName"].value;
-        const reqs = document.getElementsByClassName('form-control')
+        
         const rtext = document.getElementsByClassName('requires')
         if (x == "") {
+          const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.remove('hidden')
           }
-          
+          const reqs = document.getElementsByClassName('form-control')
           for (const req of reqs){
-          req.classList.add('border', 'border-solid', 'border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50')
+            req.classList.remove('border-gray-300', 'focus:ring-blue-200', 'focus:ring-4', 'focus:ring-opacity-50', 'input')
+          req.classList.add('border', 'border-solid', 'border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50', 'rm-ou')
           }
+          document.getElementById('btn__submit').disabled = true;
+
           return false;
         }
-        else{
+        else if (x !== ""){
+          const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.add('hidden')
           }
+          const reqs = document.getElementsByClassName('form-control')
           for (const req of reqs){
           req.classList.remove('border-red-300', 'focus:ring-red-200', 'focus:ring-4', 'focus:ring-opacity-50')
           }
+          document.getElementById('btn__submit').disabled = false;
           return true;
         }
       }
@@ -35,9 +42,9 @@ function Contact() {
                 <h1 className='text-3xl font-medium'>Contact me</h1>
                 <p className='text-slate-400 mt-4 mb-10'>Hi there Ask me about anything you have in mind.</p>
 
-      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" onSubmit={validateForm} method="POST" >
-        <div className="form-group mb-6 flex space-x-6">
-            <div className='w-6/12'>
+      <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST" >
+        <div className="form-group mb-6 flex flex-wrap space-x-6">
+            <div className='basis-3/6'>
                 <label htmlFor="first_name" className='block text-left my-2'>First name</label>
           <input 
           name='firstName' 
@@ -57,13 +64,13 @@ function Contact() {
             ease-in-out
             m-0
             inline mr-5
-            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" 
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             id="first_name"
             placeholder="First Name"
             />
             <p className="text-red-500 text-xs italic mt-2 hidden requires">Please input your first name</p>
             </div>
-            <div className='w-6/12'>
+            <div className='basis-3/6'>
                 <label htmlFor="last_name" className='block text-left my-2'>Last name</label>
           <input 
           type="text" 
@@ -83,7 +90,7 @@ function Contact() {
             ease-in-out
             m-0
             inline mr-5
-            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50" 
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             id="last_name"
             placeholder="Last Name"
             />
@@ -109,7 +116,7 @@ function Contact() {
             transition
             ease-in-out
             m-0
-            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50
+            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input
             peer ..." 
             id="email"
             placeholder="youremail@example.com"
@@ -129,13 +136,13 @@ function Contact() {
             font-normal
             text-gray-700
             bg-white bg-clip-padding
-            border border-solid border-gray-300
+            border border-solid border-gray-300 focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input
             rounded-lg
             transition
             ease-in-out
             m-0
             resize-none
-            focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 message" 
+            focus:text-gray-700 focus:bg-white " 
             id="message" 
             rows="3" 
             placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
