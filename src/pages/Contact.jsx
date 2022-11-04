@@ -167,7 +167,7 @@ function Contact() {
             required
             />
             </div>
-          <label className="form-check-label inline text-gray-800" htmlFor="checkform">You agree to providing your data to Taiwo Shina-kelani who may contact you.</label>
+          <label className="form-check-label inline text-gray-800" htmlFor="checkform">You agree to providing your data to {name} who may contact you.</label>
         </div>
         <button 
         id="btn__submit"
