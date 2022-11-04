@@ -22,7 +22,7 @@ function Contact() {
 
           return false;
         }
-        else if (x !== ""){
+        else if (x != ""){
           const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.add('hidden')
