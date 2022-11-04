@@ -129,7 +129,7 @@ function Contact() {
             
              />
             <p className=" invisible peer-invalid:visible text-red-600 text-xs font-medium">Please enter a valid Email address</p>
-            <p className="text-red-500 text-xs font-medium hidden requires">Please input your last name</p>
+            <p className="text-red-500 text-xs font-medium hidden requires">Please input your email</p>
         </div>
         <div className="form-group mb-6">
         <label htmlFor="message" className='block text-left mb-1.5'>Message</label>
