@@ -36,7 +36,7 @@ body{
   .footer{
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     align-content: space-between;
     height: 200px;
@@ -89,8 +89,8 @@ hr{
 
 .footer{
   justify-content: space-between;
-  margin-left: 80px !important;
-  margin-right: 80px !important;
+  /* margin-left: 80px !important; */
+  /* margin-right: 80px !important; */
 
 }
 .share-button{
