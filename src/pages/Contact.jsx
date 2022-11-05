@@ -14,7 +14,7 @@ function Contact() {
         let u = document.forms["myForm"]["message"].value;
         
         const rtext = document.getElementsByClassName('requires')
-        if (x == "" && y == "" && z == "" && u == "") {
+        if (x == "" || y == "" || z == "" || u == "") {
           const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.remove('hidden')
@@ -32,7 +32,7 @@ function Contact() {
 
           return false;
         }
-        else if (x !== "" && y !== "" && z !== "" && u !== ""){
+        else if (x !== "" || y !== "" || z !== "" || u !== ""){
           const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.add('hidden')
