@@ -2,14 +2,19 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import './Contact.css'
+import { useFormik } from 'formik'
+
 function Contact() {
 
   const name = 'Taiwo Shina-Kelani'
     function validateForm() {
-        let x = document.forms["myForm"]["firstName"].value;
+        let x = document.forms["myForm"]["first_name"].value;
+        let y = document.forms["myForm"]["last_name"].value;
+        let z = document.forms["myForm"]["email"].value;
+        let u = document.forms["myForm"]["message"].value;
         
         const rtext = document.getElementsByClassName('requires')
-        if (x == "") {
+        if (x == "" && y == "" && z == "" && u == "") {
           const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.remove('hidden')
@@ -27,7 +32,7 @@ function Contact() {
 
           return false;
         }
-        else if (x !== ""){
+        else if (x !== "" && y !== "" && z !== "" && u !== ""){
           const rtext = document.getElementsByClassName('requires')
           for (const text of rtext){
             text.classList.add('hidden')
@@ -38,6 +43,7 @@ function Contact() {
           }
           return true;
         }
+        
       }
   return (
     <>
@@ -50,11 +56,11 @@ function Contact() {
       <div>
       <form name='myForm' action="https://formsubmit.co/kelanitaiwo34@gmail.com" method="POST">
         <div className="form-group flex flex-wrap name-group">
-            <div className=' name-box'>
+            <div className=' name-box mb-6'>
                 <label htmlFor="first_name" className='block text-left mb-1.5'>First name</label>
           <input 
           id="first_name"
-          name='firstName' 
+          name='first_name' 
           type="text" 
           className="form-control block
             w-full
@@ -69,19 +75,18 @@ function Contact() {
             rounded-lg
             transition
             ease-in-out
-            mb-6
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             placeholder="First Name"
             />
-            <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please input your first name</p>
+            <p className="text-red-500 text-xs font-medium mt-2 hidden requires requiresx">Please input your first name</p>
             </div>
-            <div className='name-box'>
+            <div className='name-box mb-6'>
                 <label htmlFor="last_name" className='block text-left mb-1.5'>Last name</label>
           <input 
           id="last_name"
           type="text" 
-          name='lastName'
+          name='last_ame'
           className="form-control block
             w-full
             m-0
@@ -95,15 +100,14 @@ function Contact() {
             rounded-lg
             transition
             ease-in-out
-            mb-6
             inline mr-5
             focus:text-gray-700 focus:bg-white focus:ring-blue-200 focus:ring-4 focus:ring-opacity-50 input" 
             placeholder="Last Name"
             />
-            <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please input your last name</p>
+            <p className="text-red-500 text-xs font-medium mt-2 hidden requires requiresy">Please input your last name</p>
             </div>
         </div>
-        <div className="form-group">
+        <div className="form-group mb-6">
         <label htmlFor="email" className='block text-left mb-1.5'> Email</label>
           <input 
           id="email"
@@ -130,7 +134,7 @@ function Contact() {
             
              />
             <p className=" invisible peer-invalid:visible text-red-600 text-xs font-medium">Please enter a valid Email address</p>
-            <p className="text-red-500 text-xs font-medium hidden requires">Please input your email</p>
+            <p className="text-red-500 text-xs font-medium hidden requires requiresz">Please input your email</p>
         </div>
         <div className="form-group mb-6">
         <label htmlFor="message" className='block text-left mb-1.5'>Message</label>
@@ -151,12 +155,11 @@ function Contact() {
             rounded-lg
             transition
             ease-in-out
-            m-0
             resize-none
             focus:text-gray-700 focus:bg-white " 
             rows="3" 
             placeholder="Send me a message and I'll reply you as soon as possible..." ></textarea>
-          <p className="text-red-500 text-xs font-medium mt-2 hidden requires">Please enter a message</p>
+          <p className="text-red-500 text-xs font-medium mt-2 hidden requires requiresu">Please enter a message</p>
         </div>
         
         <div className="form-group form-check mb-6 flex">
